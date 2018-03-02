@@ -71,6 +71,7 @@ namespace WebApplication1.Controllers
                 Usuario user = listaDeUsuarios.Single(r => r.Id == id);
                 user.Nome = Request.Form["Nome"];
                 user.Cpf = Request.Form["Cpf"];
+                user.Email = Request.Form["Email"];
 
                 return RedirectToAction(nameof(Index));
             }
