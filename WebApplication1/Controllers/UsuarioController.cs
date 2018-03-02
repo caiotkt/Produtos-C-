@@ -25,7 +25,8 @@ namespace WebApplication1.Controllers
         // GET: Usuario/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Usuario user = listaDeUsuarios.Single(r => r.Id == id);
+            return View(user);
         }
 
         // GET: Usuario/Create
@@ -54,7 +55,8 @@ namespace WebApplication1.Controllers
         // GET: Usuario/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Usuario user = listaDeUsuarios.Single(r => r.Id == id);
+            return View(user);
         }
 
         // POST: Usuario/Edit/5
@@ -65,6 +67,10 @@ namespace WebApplication1.Controllers
             try
             {
                 // TODO: Add update logic here
+
+                Usuario user = listaDeUsuarios.Single(r => r.Id == id);
+                user.Nome = Request.Form["Nome"];
+                user.Cpf = Request.Form["Cpf"];
 
                 return RedirectToAction(nameof(Index));
             }
@@ -77,7 +83,8 @@ namespace WebApplication1.Controllers
         // GET: Usuario/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Usuario user = listaDeUsuarios.Single(r => r.Id == id);
+            return View(user);
         }
 
         // POST: Usuario/Delete/5
@@ -88,7 +95,8 @@ namespace WebApplication1.Controllers
             try
             {
                 // TODO: Add delete logic here
-
+                Usuario user = listaDeUsuarios.Single(r => r.Id == id);
+                listaDeUsuarios.Remove(user);
                 return RedirectToAction(nameof(Index));
             }
             catch

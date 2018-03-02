@@ -26,7 +26,8 @@ namespace WebApplication1.Controllers
         // GET: Produto/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Produto prod = listaDeProdutos.Single(r => r.Id == id);
+            return View(prod);
         }
 
         // GET: Produto/Create
@@ -56,7 +57,9 @@ namespace WebApplication1.Controllers
         // GET: Produto/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Produto prod = listaDeProdutos.Single(r => r.Id == id);
+
+            return View(prod);
         }
 
         // POST: Produto/Edit/5
@@ -67,6 +70,11 @@ namespace WebApplication1.Controllers
             try
             {
                 // TODO: Add update logic here
+                Produto prod = listaDeProdutos.Single(r => r.Id == id);
+               // prod.Id = Request.Form["Id"];
+                prod.Nome = Request.Form["Nome"];
+                prod.Categoria = Request.Form["Categoria"];
+               // prod.Preco = Request.Form["Preco"];
 
                 return RedirectToAction(nameof(Index));
             }
@@ -79,7 +87,8 @@ namespace WebApplication1.Controllers
         // GET: Produto/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Produto prod = listaDeProdutos.Single(r => r.Id == id);
+            return View(prod);
         }
 
         // POST: Produto/Delete/5
@@ -89,6 +98,8 @@ namespace WebApplication1.Controllers
         {
             try
             {
+                Produto prod = listaDeProdutos.Single(r => r.Id == id);
+                listaDeProdutos.Remove(prod);
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));

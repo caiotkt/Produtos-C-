@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -44,6 +44,30 @@ namespace WebApplication1
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Produto}/{action=Index}/{id?}");
+
+                routes.MapRoute(
+                    "edit_prod",                                              // Route name
+                    "{controller}/{action}/{id}",                           // URL with parameters
+                    new { controller = "Produto", action = "Edit", id = "" }  // Parameter defaults
+                );
+
+                routes.MapRoute(
+                    "delete_prod",                                              // Route name
+                    "{controller}/{action}/{id}",                           // URL with parameters
+                    new { controller = "Produto", action = "Delete", id = "" }  // Parameter defaults
+                );
+
+                routes.MapRoute(
+                    "edit_user",                                              // Route name
+                    "{controller}/{action}/{id}",                           // URL with parameters
+                    new { controller = "Usuario", action = "Edit", id = "" }  // Parameter defaults
+                );
+
+                routes.MapRoute(
+                    "delete_user",                                              // Route name
+                    "{controller}/{action}/{id}",                           // URL with parameters
+                    new { controller = "Usuario", action = "Delete", id = "" }  // Parameter defaults
+                );
             });
         }
     }

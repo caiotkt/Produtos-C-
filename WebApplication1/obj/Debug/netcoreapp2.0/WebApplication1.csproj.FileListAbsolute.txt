@@ -9,3 +9,14 @@ C:\Users\Lab\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.
 C:\Users\Lab\source\repos\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.pdb
 C:\Users\Lab\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
 C:\Users\Lab\source\repos\WebApplication1\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.deps.json
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.json
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.runtimeconfig.dev.json
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.dll
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.pdb
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.AssemblyInfo.cs
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.dll
+C:\Users\Lab\source\repos\Produtos-CS-master\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication1.pdb
